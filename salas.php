@@ -33,63 +33,63 @@
     <div class="container">
       <h1 class="page-header text-center">Gerenciamento de Salas</h1>
       <div class="row">
-        <div class="col-12">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addnew">
-            <i class="bi bi-plus-circle-fill"></i> Novo dadastro
-            </button>
-            <?php 
-                session_start();
-                if(isset($_SESSION['message'])){
-                    ?>
-                    <div class="alert alert-info text-center" style="margin-top:20px;">
-                        <?php echo $_SESSION['message']; ?>
-                    </div>
-                    <?php
- 
-                    unset($_SESSION['message']);
-                }
-            ?>
-            <table class="table table-bordered table-striped" style="margin-top:20px;">
-                <thead>
-                    <th style="width:3%">ID</th>
-                    <th style="width:50%">Nome</th>
-                    <th style="width:7%">Capacidade</th>
-                    <th style="width:5%">Ações</th>
-                </thead>
-                <tbody>
-                    <?php
-                        include_once('connection.php');
- 
-                        $database = new Connection();
-                        $db = $database->open();
-                        try{    
-                            $sql = 'SELECT * FROM salas';
-                            foreach ($db->query($sql) as $row) {
-                                ?>
-                                <tr>
-                                    <td><?php echo $row['id']; ?></td>
-                                    <td><?php echo $row['nome']; ?></td>
-                                    <td><?php echo $row['capacidade']; ?></td>                                    
-                                    <td>
-                                        <a href="#edit_<?php echo $row['id']; ?>" class="btn btn-info btn-sm" data-bs-toggle="modal"><i class="bi bi-pencil"></i></a>
-                                        <a href="#delete_<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" data-bs-toggle="modal"><i class="bi bi-trash3"></i></a>
-                                    </td>
-                                    <?php include('edit_delete_modal.php'); ?>
-                                </tr>
-                                <?php 
+            <div class="col-12">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addnew">
+                <i class="bi bi-plus-circle-fill"></i> Novo dadastro
+                </button>
+                <?php 
+                    session_start();
+                    if(isset($_SESSION['message'])){
+                        ?>
+                        <div class="alert alert-info text-center" style="margin-top:20px;">
+                            <?php echo $_SESSION['message']; ?>
+                        </div>
+                        <?php
+    
+                        unset($_SESSION['message']);
+                    }
+                ?>
+                <table class="table table-bordered table-striped" style="margin-top:20px;">
+                    <thead>
+                        <th style="width:3%">ID</th>
+                        <th style="width:50%">Nome</th>
+                        <th style="width:7%">Capacidade</th>
+                        <th style="width:5%">Ações</th>
+                    </thead>
+                    <tbody>
+                        <?php
+                            include_once('connection.php');
+    
+                            $database = new Connection();
+                            $db = $database->open();
+                            try{    
+                                $sql = 'SELECT * FROM salas';
+                                foreach ($db->query($sql) as $row) {
+                                    ?>
+                                    <tr>
+                                        <td><?php echo $row['id']; ?></td>
+                                        <td><?php echo $row['nome']; ?></td>
+                                        <td><?php echo $row['capacidade']; ?></td>                                    
+                                        <td>
+                                            <a href="#edit_<?php echo $row['id']; ?>" class="btn btn-info btn-sm" data-bs-toggle="modal"><i class="bi bi-pencil"></i></a>
+                                            <a href="#delete_<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" data-bs-toggle="modal"><i class="bi bi-trash3"></i></a>
+                                        </td>
+                                        <?php include('edit_delete_modal.php'); ?>
+                                    </tr>
+                                    <?php 
+                                }
                             }
-                        }
-                        catch(PDOException $e){
-                            echo "Houve um problema na conexão com o Banco de Dados: " . $e->getMessage();
-                        }
- 
-                        //close connection
-                        $database->close();
- 
-                    ?>
-                </tbody>
-            </table>
-        </div>
+                            catch(PDOException $e){
+                                echo "Houve um problema na conexão com o Banco de Dados: " . $e->getMessage();
+                            }
+    
+                            //close connection
+                            $database->close();
+    
+                        ?>
+                    </tbody>
+                </table>
+            </div>
       </div>
     </div>
     
