@@ -34,11 +34,11 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
 
 ## Funcionalidades
 
-:heavy_check_mark: Funcionalidade 1  
+:heavy_check_mark: Cadastramento de novas salas de reunião.
 
-:heavy_check_mark: Funcionalidade 2  
+:heavy_check_mark: Agendamento de salas disponiveis.
 
-:heavy_check_mark: Funcionalidade 3  
+:heavy_check_mark: Funciona
 
 :heavy_check_mark: Funcionalidade 4  
 
