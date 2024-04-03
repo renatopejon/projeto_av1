@@ -28,7 +28,7 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
 ## Descrição do projeto 
 
 <p align="justify">
-  O projeto tem como objetivo criar um sistema que permite  ao usuário realizar o cadastro o agendamento bem como  o acompanhamento de salas que server para reuniões e outras atividades. 
+  O projeto tem como objetivo criar um sistema que permite  ao usuário realizar o cadastro o agendamento bem como  o acompanhamento das salas que pode servirem para reuniões e outras atividades. 
 </p>
 
 ## Funcionalidades
