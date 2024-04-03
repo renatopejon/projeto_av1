@@ -10,7 +10,7 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
    <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
 
-> Status do Projeto: :heavy_check_mark: :warning: (em desenvolvimento)
+> Status do Projeto: :heavy_check_mark: :warning: (Concluído)
 
 ### Tópicos 
 
@@ -49,7 +49,7 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
 
 ## Como rodar a aplicação :arrow_forward:
 
-abra o link no hithub, cole o projeto na pasta htdocs do XAMPP em seguida abra  proejeto usando o VSCODE.
+Abra o link no hithub, cole o projeto na pasta htdocs do XAMPP em seguida abra  proejeto usando o VSCODE.
 
 ```
 git clone https://github.com/renatopejon/projeto_av1/edit/main
