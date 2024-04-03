@@ -7,7 +7,6 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
   <img src="http://img.shields.io/static/v1?label=HTML5&message=v0.2.1&color= orange&style=for-the-badge"/>
   <img src="http://img.shields.io/static/v1?label=PHP&message=v1.10.4&color=red&style=for-the-badge"/>
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
    <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
 
@@ -29,7 +28,7 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
 ## Descrição do projeto 
 
 <p align="justify">
-  O projeto tem como objetivo criar um sistema que permite o cadastramento e o agendamento de salas para reuniões e outras atividades. 
+  O projeto tem como objetivo criar um sistema que permite  ao usuário realizar o cadastro o agendamento bem como  o acompanhamento de salas que server para reuniões e outras atividades. 
 </p>
 
 ## Funcionalidades
