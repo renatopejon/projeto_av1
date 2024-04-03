@@ -2,17 +2,16 @@
 Trabalho da matéria de POOW - Prof. Ozeas Nobre
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
-  <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
+  <img src="https://img.shields.io/static/v1?label=CSS&message=v2.0.9&color=blue&style=for-the-badge"/>
+  <img src="https://img.shields.io/static/v1?label=MYSQL&message=v7.1.8&color=darkblue&style=for-the-badge"/>
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
-  <img src="http://img.shields.io/static/v1?label=Ruby&message=2.6.3&color=red&style=for-the-badge&logo=ruby"/>
-  <img src="http://img.shields.io/static/v1?label=Ruby%20On%20Rails%20&message=6.0.2.2&color=red&style=for-the-badge&logo=ruby"/>
-  <img src="http://img.shields.io/static/v1?label=TESTES&message=%3E100&color=GREEN&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=HTML5&message=v0.2.1&color= orange&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=PHP&message=v1.10.4&color=red&style=for-the-badge"/>
    <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
    <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
 
-> Status do Projeto: :heavy_check_mark: :warning: (concluido, em desenvolvimento, etc)
+> Status do Projeto: :heavy_check_mark: :warning: (em desenvolvimento)
 
 ### Tópicos 
 
@@ -22,18 +21,15 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
 
 :small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
 
-:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
-
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
 ... 
 
-Insira os tópicos do README em links para facilitar a navegação do leitor
 
 ## Descrição do projeto 
 
 <p align="justify">
-  Descrição breve do projeto compondo um paragrafo ou dois. 
+  O projeto tem como objetivo criar um sistema que permite a criação e o cadastramento de salas para reuniões. 
 </p>
 
 ## Funcionalidades
@@ -48,49 +44,21 @@ Insira os tópicos do README em links para facilitar a navegação do leitor
 
 ## Layout ou Deploy da Aplicação :dash:
 
-> Link do deploy da aplicação. Exemplo com netlify: https://certificates-for-everyone-womakerscode.netlify.app/
+> Link do deploy da aplicação. Exemplo com netlify: 
 
-... 
-
-Se ainda não houver deploy, insira capturas de tela da aplicação ou gifs
-
-## Pré-requisitos
-
-:warning: [Node](https://nodejs.org/en/download/)
 
 ...
 
-Liste todas as dependencias e libs que o usuário deve ter instalado na máquina antes de rodar a aplicação 
 
 ## Como rodar a aplicação :arrow_forward:
 
-No terminal, clone o projeto: 
+abra o link no hithub, cole o projeto na pasta htdocs do XAMPP em seguida abra  proejeto usando o VSCODE.
 
 ```
-git clone https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator
+git clone https://github.com/renatopejon/projeto_av1/edit/main
 ```
 
 ... 
-
-Coloque um passo a passo para rodar a sua aplicação. **Dica: clone o próprio projeto e verfique se o passo a passo funciona**
-
-## Como rodar os testes
-
-Coloque um passo a passo para executar os testes
-
-```
-$ npm test, rspec, etc 
-```
-
-## Casos de Uso
-
-Explique com mais detalhes como a sua aplicação poderia ser utilizada. O uso de **gifs** aqui seria bem interessante. 
-
-Exemplo: Caso a sua aplicação tenha alguma funcionalidade de login apresente neste tópico os dados necessários para acessá-la.
-
-... 
-
-Se quiser, coloque uma amostra do banco de dados 
 
 ## Iniciando/Configurando banco de dados
 
@@ -105,11 +73,13 @@ CREATE TABLE `suahora`.`salas`
     PRIMARY KEY (`id`)
 )
 ENGINE = InnoDB;
-
+```
 ## Linguagens, dependencias e libs utilizadas :books:
 
-- [boostrap5([https://pt-br.reactjs.org/docs/create-a-new-react-app.html](https://getbootstrap.com/)
-- [React PDF](https://react-pdf.org/)
+- [boostrap5](https://getbootstrap.com/)
+- [PHP](https://www.php.net/)
+- [XAMPP](https://www.apachefriends.org/pt_br/index.html)
+- [VSCODE](https://code.visualstudio.com/)
 
 ...
 
