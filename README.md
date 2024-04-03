@@ -33,18 +33,16 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
 
 ## Funcionalidades
 
-:heavy_check_mark: Cadastramento de novas salas de reunião.
+:heavy_check_mark: Cadastramento de novas salas.
 
 :heavy_check_mark: Agendamento de salas disponiveis.
 
-:heavy_check_mark: Funciona
-
-:heavy_check_mark: Funcionalidade 4  
+:heavy_check_mark: Acompanhamento do status das salas.
+  
 
 ## Layout ou Deploy da Aplicação :dash:
 
-> Link do deploy da aplicação. Exemplo com netlify: 
-
+>http://localhost/trabalho-final/index.php
 
 ...
 
@@ -81,14 +79,6 @@ ENGINE = InnoDB;
 - [VSCODE](https://code.visualstudio.com/)
 
 ...
-
-
-## Desenvolvedores/Contribuintes :octocat:
-
-Liste o time responsável pelo desenvolvimento do projeto
-
-
-| :---: | :---: | :---: 
 
 ## Licença 
 
