@@ -28,7 +28,7 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
 ## Descrição do projeto 
 
 <p align="justify">
-  O projeto tem como objetivo criar um sistema que permite  ao usuário realizar o cadastro o agendamento bem como  o acompanhamento das salas que pode servirem para reuniões e outras atividades. 
+  O projeto tem como objetivo criar um sistema que permite  ao usuário realizar o cadastro o agendamento bem como  o acompanhamento das salas para reuniões. 
 </p>
 
 ## Funcionalidades
@@ -38,8 +38,11 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
 :heavy_check_mark: Agendamento de salas disponiveis.
 
 :heavy_check_mark: Acompanhamento do status das salas.
-  
 
+:heavy_check_mark: Escolha o tamanho, capacidade  e os equipamentos para a salas.
+
+
+  
 ## Layout ou Deploy da Aplicação :dash:
 
 >http://localhost/trabalho-final/index.php
