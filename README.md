@@ -76,7 +76,7 @@ ENGINE = InnoDB;
 ```
 ## Linguagens, dependencias e libs utilizadas :books:
 
-- [Boostrap5](https://getbootstrap.com/)
+- [Boostrap](https://getbootstrap.com/)
 - [PHP](https://www.php.net/)
 - [XAMPP](https://www.apachefriends.org/pt_br/index.html)
 - [VSCODE](https://code.visualstudio.com/)
