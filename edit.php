@@ -27,6 +27,6 @@
         $_SESSION['message'] = 'Preencha o formulário antes.';
     }
  
-    header('location: index.php');
+    header('location: salas.php');
  
 ?>
