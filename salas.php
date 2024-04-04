@@ -35,7 +35,7 @@
       <div class="row">
             <div class="col-12">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addnew">
-                <i class="bi bi-plus-circle-fill"></i> Novo dadastro
+                <i class="bi bi-plus-circle-fill"></i> Novo Cadastro
                 </button>
                 <?php 
                     session_start();
