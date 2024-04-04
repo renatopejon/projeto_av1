@@ -52,7 +52,7 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
 
 ## Como rodar a aplicação :arrow_forward:
 
-Abra o link no hithub, cole o projeto na pasta htdocs do XAMPP em seguida abra  proejeto usando o VSCODE.
+Abra o link no hithub, cole o projeto na pasta htdocs do XAMPP em seguida abra o projeto usando VSCODE.
 
 ```
 git clone https://github.com/renatopejon/projeto_av1/edit/main
