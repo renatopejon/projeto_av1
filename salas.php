@@ -54,6 +54,7 @@
                         <th style="width:3%">ID</th>
                         <th style="width:50%">Nome</th>
                         <th style="width:7%">Capacidade</th>
+                        <th style="width:7%">Tamanho</th>
                         <th style="width:5%">Ações</th>
                     </thead>
                     <tbody>
@@ -70,6 +71,7 @@
                                         <td><?php echo $row['id']; ?></td>
                                         <td><?php echo $row['nome']; ?></td>
                                         <td><?php echo $row['capacidade']; ?></td>                                    
+                                        <td><?php echo $row['tamanho']; ?></td>                                    
                                         <td>
                                             <a href="#edit_<?php echo $row['id']; ?>" class="btn btn-info btn-sm" data-bs-toggle="modal"><i class="bi bi-pencil"></i></a>
                                             <a href="#delete_<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" data-bs-toggle="modal"><i class="bi bi-trash3"></i></a>

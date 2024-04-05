@@ -80,23 +80,23 @@
     </div>
     <div class="form" style=" margin-left: 5%; margin-bottom: 200px; font-size: 16px;">
       <div class="form-floating mb-3">
-          <input type="" class="form-control mt-3" style="border: ; width: 50%;" placeholder="ID" id="" >
+          <input type="" class="form-control mt-3" style="width: 50%;" placeholder="ID" id="" >
           <label for="">ID da Sala</label>
       </div>
        <div class="form-floating">
-          <input type="text" class="form-control mt-3" style="border: ; width: 50%;" placeholder="Nome" id="">
+          <input type="text" class="form-control mt-3" style="width: 50%;" placeholder="Nome" id="">
           <label for="">Nome do Organizador</label>
       </div>
       <div class="form-floating">
-          <input type="int" class="form-control mt-3" style="border: ; width: 50%;" id="" placeholder="Capacidade">
+          <input type="int" class="form-control mt-3" style="width: 50%;" id="" placeholder="Capacidade">
           <label for="">Numero de Participantes</label>
       </div>
       <div class="form-floating">
-          <input type="time" class="form-control mt-3" style="border: ; width: 50%;" id="" placeholder="Horario">
+          <input type="time" class="form-control mt-3" style="width: 50%;" id="" placeholder="Horario">
           <label for="">Horario</label>
       </div>
       <div class="form-floating">
-          <input type="date" class="form-control mt-3" style="border: ; width: 50%;" id="" placeholder="Data">
+          <input type="date" class="form-control mt-3" style="width: 50%;" id="" placeholder="Data">
           <label for="">Data</label>
       </div>
       <div class="mb-10" >
