@@ -33,7 +33,7 @@
     <div class="container">
       <h1 class="page-header text-center">Gerenciamento de Salas</h1>
       <div class="row">
-            <div class="col-12">
+            <div class="col-12 flex-nowrap">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addnew">
                 <i class="bi bi-plus-circle-fill"></i> Novo Cadastro
                 </button>
@@ -55,8 +55,8 @@
                         <th style="width:50%">Nome</th>
                         <th style="width:7%">Capacidade</th>
                         <th style="width:7%">Tamanho</th>
-                        <th style="width:5%">Status</th>
-                        <th style="width:5%">Ações</th>
+                        <th style="width:5%" class="text-center">Status</th>
+                        <th style="width:10%" class="text-center">Ações</th>
                     </thead>
                     <tbody>
                         <?php
@@ -72,9 +72,9 @@
                                         <td><?php echo $row['id']; ?></td>
                                         <td><?php echo $row['nome']; ?></td>
                                         <td><?php echo $row['capacidade']; ?></td>                                    
-                                        <td><?php echo $row['tamanho']; ?></td>                                    
-                                        <td><?php if($row['status'] == 1){echo 'Disponível';} else {echo 'Indisponível';} ?></td>                                    
-                                        <td>
+                                        <td><?php echo $row['tamanho'].' m²'; ?></td>                                    
+                                        <td><?php if($row['status'] == 1){echo '<div class="p-1 text-center text-light bg-success border-primary-subtle rounded-3">Disponível</div>';} else {echo '<div class="p-1 text-center text-light bg-danger border-primary-subtle rounded-3">Ocupada</div>';} ?></td>                                    
+                                        <td class="text-center text-nowrap">
                                             <a href="#edit_<?php echo $row['id']; ?>" class="btn btn-info btn-sm" data-bs-toggle="modal"><i class="bi bi-pencil"></i></a>
                                             <a href="#delete_<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" data-bs-toggle="modal"><i class="bi bi-trash3"></i></a>
                                         </td>

@@ -53,8 +53,8 @@
                     <thead>
                         <th style="width:3%">ID</th>
                         <th style="width:50%">Nome</th>
-                        <th style="width:7%">Assunto</th>
-                        <th style="width:7%">Sala</th>
+                        <th style="width:17%">Assunto</th>
+                        <th style="width:17%">Sala</th>
                         <th style="width:7%">Participantes</th>
                         <th style="width:5%">Data</th>
                         <th style="width:5%">Horário</th>
@@ -69,21 +69,21 @@
                             try{    
                                 $sql = 'SELECT * FROM agendamentos';
                                 foreach ($db->query($sql) as $row) {
-                                    ?>
+                        ?>
                                     <tr>
                                         <td><?php echo $row['id']; ?></td>
                                         <td><?php echo $row['nome']; ?></td>
                                         <td><?php echo $row['assunto']; ?></td>                                    
                                         <td><?php echo $row['sala']; ?></td>                                    
-                                        <td><?php echo $row['participantes']; ?></td>                                    
+                                        <td class="text-center"><?php echo $row['participantes']; ?></td>                                    
                                         <td><?php echo date("d/m/Y", strtotime($row['dat']));?></td>                                    
                                         <td><?php echo $row['horario']?></td>                                    
-                                        <td>
+                                        <td class="text-center">
                                             <a href="#delete_<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" data-bs-toggle="modal"><i class="bi bi-trash3"></i></a>
                                         </td>
                                         <?php include('delete_modal_agendamentos.php'); ?>
                                     </tr>
-                                    <?php 
+                          <?php 
                                 }
                             }
                             catch(PDOException $e){

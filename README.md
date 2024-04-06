@@ -2,11 +2,11 @@
 Trabalho da matéria de POOW - Prof. Ozeas Nobre
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=CSS&message=v2.0.9&color=blue&style=for-the-badge"/>
-  <img src="https://img.shields.io/static/v1?label=MYSQL&message=v7.1.8&color=darkblue&style=for-the-badge"/>
+  <img src="https://img.shields.io/static/v1?label=CSS&message=v3.0&color=blue&style=for-the-badge"/>
+  <img src="https://img.shields.io/static/v1?label=MariaDB&message=v10.4.32&color=darkblue&style=for-the-badge"/>
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
-  <img src="http://img.shields.io/static/v1?label=HTML5&message=v0.2.1&color= orange&style=for-the-badge"/>
-  <img src="http://img.shields.io/static/v1?label=PHP&message=v1.10.4&color=red&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=HTML5&message=v5.3&color= orange&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=PHP&message=v8.2.12&color=red&style=for-the-badge"/>
    <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
 
@@ -70,6 +70,7 @@ CREATE TABLE `suahora`.`salas`
     `nome` VARCHAR(255) NOT NULL,
     `capacidade` INT(40) NOT NULL,
     `tamanho` INT(40) NOT NULL,
+    `status` TINYINT(1) NOT NULL,
     PRIMARY KEY (`id`)
 )
 ENGINE = InnoDB;
@@ -80,6 +81,7 @@ CREATE TABLE `suahora`.`agendamentos`
     `nome` VARCHAR(255) NOT NULL,
     `assunto` VARCHAR(255) NOT NULL,
     `sala` VARCHAR(255) NOT NULL,
+    `idsala` INT(40) NOT NULL,
     `participantes` INT(40) NOT NULL,
     `dat` DATE NOT NULL,
     `horario` TIME NOT NULL,

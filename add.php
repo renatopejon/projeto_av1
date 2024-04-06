@@ -7,7 +7,7 @@
         $db = $database->open();
         try{
             //use prepared statement to prevent sql injection
-            $stmt = $db->prepare("INSERT INTO salas (nome, tamanho, capacidade) VALUES (:nome, :tamanho, :capacidade)");
+            $stmt = $db->prepare("INSERT INTO salas (nome, tamanho, capacidade, status) VALUES (:nome, :tamanho, :capacidade, 1)");
             //if-else statement in executing our prepared statement
             $_SESSION['message'] = ( $stmt->execute(array(':nome' => $_POST['nome'] , ':tamanho' => $_POST['tamanho'] , ':capacidade' => $_POST['capacidade'])) ) ? 'Sala cadastrada com sucesso' : 'Ops, Algo deu errado. Não foi possível criar a sala';  
          

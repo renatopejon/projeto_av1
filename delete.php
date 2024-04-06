@@ -22,6 +22,6 @@
         $_SESSION['message'] = 'Selecione uma sala para remover.';
     }
  
-    header('location: index.php');
+    header('location: salas.php');
  
 ?>
