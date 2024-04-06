@@ -73,6 +73,19 @@ CREATE TABLE `suahora`.`salas`
     PRIMARY KEY (`id`)
 )
 ENGINE = InnoDB;
+
+CREATE TABLE `suahora`.`agendamentos`
+(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `nome` VARCHAR(255) NOT NULL,
+    `assunto` VARCHAR(255) NOT NULL,
+    `sala` VARCHAR(255) NOT NULL,
+    `participantes` INT(40) NOT NULL,
+    `dat` DATE NOT NULL,
+    `horario` TIME NOT NULL,
+    PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
 ```
 ## Linguagens, dependencias e libs utilizadas :books:
 
