@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,82 +29,78 @@
         </div>
     </div>
     </nav>
-    <h1 class="page-header text-center mt-5">Agendamentos</h1>
-    <select class="form-select form-select-lg mt-5" style="width: 20%; margin-left: 5%; font-size: 16px;"  aria-label="Small">
-      <option selected>Escolha sua Sala</option>
-      <option value="1">Sala A</option>
-      <option value="2">Sala B</option>
-      <option value="3">Sala C</option>
-    </select>
-    <p id="disponibilidadeMensagem"></p>
 
-    <script>
-      const selectElement = document.getElementById('salaSelect');
-      const mensagemElement = document.getElementById('disponibilidadeMensagem');
-
-      // Simule a disponibilidade da sala (true para disponível, false para ocupada)
-      const salaDisponivel = true;
-
-      selectElement.addEventListener('change', () => {
-        const salaSelecionada = selectElement.value;
-        if (salaSelecionada) {
-            mensagemElement.textContent = salaDisponivel ? 'Sala disponível' : 'Sala ocupada';
-        } else {
-            mensagemElement.textContent = ''; // Limpa a mensagem se nenhuma sala for selecionada
-        }
-      });
-    </script>
-    <div class="check mt-5" style=" margin-left: 5%; font-size: 16px;">
-      <label style="margin-bottom: 10px;" for=" ">Selecione os itens:</label>
-      <br>
-      <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-          <label class="form-check-label" for="som">Alto-Falantes</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="" value="">
-        <label class="form-check-label" for="">Datashow</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="" value="" >
-        <label class="form-check-label" for="">Microfone</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="" value="" >
-        <label class="form-check-label" for="">Computador</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="" value="" >
-        <label class="form-check-label" for="">Câmeras</label>
+    <div class="container">
+      <h1 class="page-header text-center">Agendamentos</h1>
+      <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addnew">
+                <i class="bi bi-plus-circle-fill"></i> Novo Agendamento
+                </button>
+                <?php 
+                    session_start();
+                    if(isset($_SESSION['message'])){
+                        ?>
+                        <div class="alert alert-info text-center" style="margin-top:20px;">
+                            <?php echo $_SESSION['message']; ?>
+                        </div>
+                        <?php
+    
+                        unset($_SESSION['message']);
+                    }
+                ?>
+                <table class="table table-bordered table-striped" style="margin-top:20px;">
+                    <thead>
+                        <th style="width:3%">ID</th>
+                        <th style="width:50%">Nome</th>
+                        <th style="width:7%">Assunto</th>
+                        <th style="width:7%">Sala</th>
+                        <th style="width:7%">Participantes</th>
+                        <th style="width:5%">Data</th>
+                        <th style="width:5%">Horário</th>
+                        <th style="width:5%">Ações</th>
+                    </thead>
+                    <tbody>
+                        <?php
+                            include_once('connection.php');
+    
+                            $database = new Connection();
+                            $db = $database->open();
+                            try{    
+                                $sql = 'SELECT * FROM agendamentos';
+                                foreach ($db->query($sql) as $row) {
+                                    ?>
+                                    <tr>
+                                        <td><?php echo $row['id']; ?></td>
+                                        <td><?php echo $row['nome']; ?></td>
+                                        <td><?php echo $row['assunto']; ?></td>                                    
+                                        <td><?php echo $row['sala']; ?></td>                                    
+                                        <td><?php echo $row['participantes']; ?></td>                                    
+                                        <td><?php echo date("d/m/Y", strtotime($row['dat']));?></td>                                    
+                                        <td><?php echo $row['horario']?></td>                                    
+                                        <td>
+                                            <a href="#delete_<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" data-bs-toggle="modal"><i class="bi bi-trash3"></i></a>
+                                        </td>
+                                        <?php include('delete_modal_agendamentos.php'); ?>
+                                    </tr>
+                                    <?php 
+                                }
+                            }
+                            catch(PDOException $e){
+                                echo "Houve um problema na conexão com o Banco de Dados: " . $e->getMessage();
+                            }
+    
+                            //close connection
+                            $database->close();
+    
+                        ?>
+                    </tbody>
+                </table>
+            </div>
       </div>
     </div>
-    <div class="form" style=" margin-left: 5%; margin-bottom: 200px; font-size: 16px;">
-      <div class="form-floating mb-3">
-          <input type="" class="form-control mt-3" style="width: 50%;" placeholder="ID" id="" >
-          <label for="">ID da Sala</label>
-      </div>
-       <div class="form-floating">
-          <input type="text" class="form-control mt-3" style="width: 50%;" placeholder="Nome" id="">
-          <label for="">Nome do Organizador</label>
-      </div>
-      <div class="form-floating">
-          <input type="int" class="form-control mt-3" style="width: 50%;" id="" placeholder="Capacidade">
-          <label for="">Numero de Participantes</label>
-      </div>
-      <div class="form-floating">
-          <input type="time" class="form-control mt-3" style="width: 50%;" id="" placeholder="Horario">
-          <label for="">Horario</label>
-      </div>
-      <div class="form-floating">
-          <input type="date" class="form-control mt-3" style="width: 50%;" id="" placeholder="Data">
-          <label for="">Data</label>
-      </div>
-      <div class="mb-10" >
-        <button type="submit" class="btn btn-primary" style="margin-top: 10px; width: 150px;">Enviar</button>
-      </div>
-
-    </div>
-
+    
+    <?php include('add_modal_agendamentos.php'); ?>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
