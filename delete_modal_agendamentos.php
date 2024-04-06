@@ -14,7 +14,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <a href="delete.php?id=<?php echo $row['id']; ?>" class="btn btn-danger"> Sim</a>
+        <a href="delete_agendamentos.php?id=<?php echo $row['id']; ?>" class="btn btn-danger"> Sim</a>
       </div>
     </div>
   </div>
