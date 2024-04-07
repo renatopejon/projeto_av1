@@ -62,8 +62,10 @@ git clone https://github.com/renatopejon/projeto_av1/edit/main
 
 ## Iniciando/Configurando banco de dados
 
-SQL para criação do Banco de Dados:
+SQL para criação do Banco de Dados e suas tabelas:
 ```sql
+CREATE DATABASE suahora;
+
 CREATE TABLE `suahora`.`salas`
 (
     `id` INT NOT NULL AUTO_INCREMENT,
