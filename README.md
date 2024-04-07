@@ -1,5 +1,4 @@
-# Trabalho_crud_av1
-Trabalho da matéria de POOW - Prof. Ozeas Nobre
+# Avaliação AV1
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=CSS&message=v3.0&color=blue&style=for-the-badge"/>
