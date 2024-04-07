@@ -18,7 +18,7 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
 
 :small_blue_diamond: [Funcionalidades](#funcionalidades)
 
-:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
+:small_blue_diamond: [Layout](#layout)
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
@@ -33,15 +33,11 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
 
 ## Funcionalidades
 
-:heavy_check_mark: Cadastramento de novas salas.
+:heavy_check_mark: Cadastramento, edição e remoção de novas salas.
 
-:heavy_check_mark: Agendamento de salas disponiveis.
+:heavy_check_mark: Agendamento e cancelamento de salas disponiveis.
 
 :heavy_check_mark: Acompanhamento do status das salas.
-
-:heavy_check_mark: Escolha o tamanho, capacidade  e os equipamentos para a salas.
-
-
   
 ## Layout:
 
@@ -50,7 +46,8 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
 
 ## Como rodar a aplicação :arrow_forward:
 
-Clone o repositório na pasta htdocs do XAMPP em seguida abra o projeto usando VSCODE.
+- Crie o banco de dados e as tabelas utilizando a query abaixo
+- Clone o repositório na pasta htdocs do XAMPP em seguida abra o navegador em http://localhost/projeto_av1/
 
 ```bash
 git clone https://github.com/renatopejon/projeto_av1.git
@@ -102,4 +99,4 @@ ENGINE = InnoDB;
 
 The [MIT License]() (MIT)
 
-Copyright :copyright: Ano - Trabalho_crud_av1
+Copyright :copyright: 2024 - Centro Universitário do Norte
