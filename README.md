@@ -45,17 +45,15 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
   
 ## Layout:
 
->http://localhost/trabalho-final/index.php
-
-...
+<img src="https://imgur.com/a/TyQCCLD"/>
 
 
 ## Como rodar a aplicação :arrow_forward:
 
-Abra o link no hithub, cole o projeto na pasta htdocs do XAMPP em seguida abra o projeto usando VSCODE.
+Clone o repositório na pasta htdocs do XAMPP em seguida abra o projeto usando VSCODE.
 
-```
-git clone https://github.com/renatopejon/projeto_av1/edit/main
+```bash
+git clone https://github.com/renatopejon/projeto_av1.git
 ```
 
 ... 
