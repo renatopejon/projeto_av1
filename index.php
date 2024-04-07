@@ -11,6 +11,7 @@
         position: fixed;
         width: 100%;
         bottom: 0;
+        background-image: linear-gradient(to right, #f1f1f1, #303030)
       }
     </style>
   </head>
