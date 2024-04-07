@@ -43,7 +43,7 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
 
 
   
-## Layout ou Deploy da Aplicação :dash:
+## Layout:
 
 >http://localhost/trabalho-final/index.php
 
