@@ -98,5 +98,3 @@ ENGINE = InnoDB;
 ## Licença 
 
 The [MIT License]() (MIT)
-
-Copyright :copyright: 2024 - Centro Universitário do Norte
