@@ -45,7 +45,7 @@ Trabalho da matéria de POOW - Prof. Ozeas Nobre
   
 ## Layout:
 
-![Layout da página](https://imgur.com/a/TyQCCLD)
+![Layout da página](https://i.imgur.com/d2jDUud.png)
 
 
 ## Como rodar a aplicação :arrow_forward:
