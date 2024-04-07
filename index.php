@@ -85,7 +85,7 @@
     
 <?php include('add_modal.php'); ?>
 
-<footer class="mt-5 p-4 text-black text-center text-lg-start">
+<footer class="mt-5 p-4 text-black text-center text-lg-start bg-body-tertiary fixed-bottom">
   <div class="container p-4">
     <div class="row">
       <div class="col mb-3">

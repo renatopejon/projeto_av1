@@ -45,7 +45,7 @@
       </div>
       <div class="modal-body">
             <p class="text-center">Você tem certeza que quer remover?</p>
-            <h2 class="text-center"><?php echo $row['nome'].' '.$row['capacidade']; ?></h2>
+            <h2 class="text-center"><?php echo '#'.$row['id'].' '.$row['nome']; ?></h2>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
