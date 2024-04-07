@@ -106,8 +106,7 @@
         <div class="row">
             <!--Grid column-->
             <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Centro Universitário do Norte (UNINORTE)</h5>
-            <h6 class="text-uppercase">AVALIAÇÃO AV1</h6>
+            <a href="https://github.com/renatopejon/projeto_av1" target="_blank" class="text-white text-decoration-none"><h5 class="text-uppercase"><i class="bi bi-github"></i> Avaliação AV1</h5></a>
             <br>
             <p>
                 Professor: Ozeas Nobre<br>
@@ -131,21 +130,34 @@
 
             <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-0">Links</h5>
-
+            <h5 class="text-uppercase mb-0">Alunos</h5>
+            <br>
             <ul class="list-unstyled">
+
                 <li>
-                <a href="#!" class="text-white">Link 1</a>
+                <a href="https://github.com/LeylaRegina" target="_blank" class="text-white text-decoration-none"><i class="bi bi-github"></i> Leyla Regina</a>
                 </li>
                 <li>
-                <a href="#!" class="text-white">Link 2</a>
+                
+                <li>
+                <a href="https://github.com/MarcilinoFreitas" target="_blank" class="text-white text-decoration-none"><i class="bi bi-github"></i></a> Marcilino Freitas
                 </li>
                 <li>
-                <a href="#!" class="text-white">Link 3</a>
+                
+                <li>
+                <a href="https://github.com/renatopejon" target="_blank" class="text-white text-decoration-none"><i class="bi bi-github"></i></a> Renato Pejon
                 </li>
                 <li>
-                <a href="#!" class="text-white">Link 4</a>
+                
+                <li>
+                <a href="https://github.com/Barros1995" target="_blank" class="text-white text-decoration-none"><i class="bi bi-github"></i></a> Samuel Lucas
                 </li>
+                <li>
+                
+                <li>
+                <a href="https://github.com/wennedy12" target="_blank" class="text-white text-decoration-none"><i class="bi bi-github"></i></a> Wennedy Galvão
+                </li>
+                <li>
             </ul>
             </div>
             <!--Grid column-->
@@ -156,7 +168,7 @@
 
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2020 Copyright:
+        © 2024 Copyright: Centro Universitário do Norte
         <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
         </div>
         <!-- Copyright -->
